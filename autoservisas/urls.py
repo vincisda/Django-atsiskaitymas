@@ -18,7 +18,7 @@ from django.urls import path
 from Autoservice.views import home_view, login_view, register_view
 
 urlpatterns = [
-    path('home/', home_view, name='home_view'),
+    path('', home_view, name='home_view'),
     path('login/', login_view, name='login_view'),
     path('register/', register_view, name='register_view'),
     path('admin/', admin.site.urls),
