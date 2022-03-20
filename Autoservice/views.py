@@ -16,3 +16,8 @@ def login_view(request, *args, **kwargs):
 def register_view(request, *args, **kwargs):
 
     return render(request, 'register.html', {})
+
+
+def statistics_view(request, *args, **kwargs):
+
+    return render(request, 'stats.html', {})
