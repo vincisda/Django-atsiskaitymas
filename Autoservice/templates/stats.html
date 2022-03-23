@@ -12,6 +12,8 @@
         <th scope="col">State Registration</th>
         <th scope="col">Client</th>
         <th scope="col">VIN</th>
+        <th scope="col">Make/Model</th>
+        
       </tr>
     </thead>
     <tbody>
@@ -19,8 +21,9 @@
       <tr>
         <td>{{ car.id }}</td>
         <td>{{ car.state_registration|upper }}</td>
-        <td>{{ car.client|title  }}</td>
-        <td>@{{ car.vin_code|upper  }}</td>
+        <td>{{ car.client|title }}</td>
+        <td>{{ car.vin_code|upper  }}</td>
+        <td>{{ car.car_model_id|upper  }}</td>
       </tr>
       {% endfor %}
     </tbody>
